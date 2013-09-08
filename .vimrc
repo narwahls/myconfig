@@ -1,4 +1,3 @@
-## old config right here. maybe test it later
 set nocompatible                                           
 set t_Co=16                                                
 syntax on                                                  

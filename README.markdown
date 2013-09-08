@@ -3,9 +3,13 @@ Configuration files for my desktops
 
 todo
 	solarized themes
-	vimrc
-	tmux.conf
+//	vimrc
+//	tmux.conf
+		strg -A !!!!
 	awesomewm
+		basic configuration
+		alt - r for start programs
+//	urxvt
 	install script
 	xmonad multimonitor behavoir 
 	add mpd keys and status
