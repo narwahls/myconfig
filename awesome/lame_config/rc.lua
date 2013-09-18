@@ -9,7 +9,6 @@ require("beautiful")
 require("naughty")
 -- shifty - dynamic tagging library
 require("shifty")
-require("debian.menu")
 
 -- useful for debugging, marks the beginning of rc.lua exec
 print("Entered rc.lua: " .. os.time())
@@ -204,7 +203,6 @@ mymainmenu = awful.menu(
     {
         items = {
             {"awesome", myawesomemenu, beautiful.awesome_icon},
-		{ "Debian", debian.menu.Debian_menu.Debian },
               {"open terminal", terminal}}
           })
 

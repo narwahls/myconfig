@@ -1,0 +1,204 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+# This config file uses keycodes (bindsym) and was written for the QWERTY
+# layout.
+#
+# To get a config file with the same key positions, but for your current
+# layout, use the i3-config-wizard
+#
+
+# Floating
+for_window [class="Gimp"]       floating enable
+for_window [class="MPlayer"]    floating enable
+for_window [class="Galculator"] floating enable
+for_window [class="XTerm"]      floating enable
+#for_window [class="XXXTerm"]    floating disable
+
+# COLOURS
+client.focused						#363636 #4f4f4f #ff7b00
+client.focused_inactive   #363636 #363636 #9e9e9e
+client.unfocused					#363636 #363636 #9e9e9e
+client.urgent							#1a1a1a #dd044b #ffffff
+
+# Workspace
+workspace 1 output LVDS
+workspace 2 output LVDS
+workspace 3 output LVDS
+workspace 4 output LVDS
+workspace 5 output LVDS
+workspace 6 output VGA-0
+workspace 7 output VGA-0
+workspace 8 output VGA-0
+workspace 9 output VGA-0
+workspace 10 output VGA-0
+
+# font for window titles. ISO 10646 = Unicode
+font -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
+#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+
+# default orientation
+default_orientation vertical
+
+# use Mouse+Mod4 to drag floating windows to their wanted position
+floating_modifier Mod4
+
+# Border style <normal|1pixel|borderless>
+new_window normal
+
+# Follow mouse
+focus_follows_mouse no
+
+# kill focused window
+bindsym Mod4+Shift+q kill
+
+# change focus
+bindsym Mod4+h focus left
+bindsym Mod4+j focus down
+bindsym Mod4+k focus up
+bindsym Mod4+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym Mod4+Left  focus left
+bindsym Mod4+Down  focus down
+bindsym Mod4+Up    focus up
+bindsym Mod4+Right focus right
+
+# move focused window
+bindsym Mod4+Shift+h move left
+bindsym Mod4+Shift+j move down
+bindsym Mod4+Shift+k move up
+bindsym Mod4+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym Mod4+Shift+Left move left
+bindsym Mod4+Shift+Down move down
+bindsym Mod4+Shift+Up move up
+bindsym Mod4+Shift+Right move right
+
+# split in horizontal orientation
+bindsym Mod4+i split horizontal
+
+# split in vertical orientation
+bindsym Mod4+u split vertical
+
+# enter fullscreen mode for the focused container
+bindsym Mod4+f fullscreen
+
+# change container layout (stacked, tabbed, default)
+bindsym Mod4+s       layout stacking
+bindsym Mod4+shift+t layout tabbed
+bindsym Mod4+d       layout default
+
+# toggle tiling / floating
+bindsym Mod4+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym Mod4+space focus mode_toggle
+
+# focus the parent container
+bindsym Mod4+Shift+a focus parent
+
+# focus the child container
+#bindsym Mod4+d focus child
+
+# switch to workspace
+bindsym Mod4+1 workspace 1
+bindsym Mod4+2 workspace 2
+bindsym Mod4+3 workspace 3
+bindsym Mod4+4 workspace 4
+bindsym Mod4+5 workspace 5
+bindsym Mod4+6 workspace 6
+bindsym Mod4+7 workspace 7
+bindsym Mod4+8 workspace 8
+bindsym Mod4+9 workspace 9
+bindsym Mod4+0 workspace 10
+
+# move focused container to workspace
+bindsym Mod4+Shift+1 move workspace 1
+bindsym Mod4+Shift+2 move workspace 2
+bindsym Mod4+Shift+3 move workspace 3
+bindsym Mod4+Shift+4 move workspace 4
+bindsym Mod4+Shift+5 move workspace 5
+bindsym Mod4+Shift+6 move workspace 6
+bindsym Mod4+Shift+7 move workspace 7
+bindsym Mod4+Shift+8 move workspace 8
+bindsym Mod4+Shift+9 move workspace 9
+bindsym Mod4+Shift+0 move workspace 10
+
+# reload the configuration file
+bindsym Mod4+Shift+w reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym Mod4+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym Mod4+Shift+e exit
+# border toggle
+bindsym Mod4+Shift+b border toggle
+
+# dmenu
+bindsym Mod4+a exec ~/.dmenu
+
+# USER DEFINED ##################################
+#bindsym Control+Mod1+a exec acroread
+bindsym Control+Mod1+c exec urxvtc -e ncmpcpp
+bindsym Control+Mod1+m exec urxvtc -e mutt
+bindsym Control+Mod1+o exec libreoffice
+bindsym Control+Mod1+q exec i3lock -c 000000
+bindsym Control+Mod1+r exec bashrun
+bindsym Control+Mod1+s exec urxvtc
+bindsym Control+Mod1+t exec urxvtc -e htop
+bindsym Control+Mod1+v exec urxvtc -e alsamixer
+bindsym Control+Mod1+w exec urxvtc -e wicd-curses
+bindsym Control+Mod1+x exec xombrero
+# MPD
+bindsym Mod4+z exec mpc previous
+bindsym Mod4+x exec mpc toggle
+bindsym Mod4+c exec mpc pause
+bindsym Mod4+v exec mpc stop
+bindsym Mod4+b exec mpc next
+bindsym Mod4+o exec amixer -c 0 sset Master 2dB-
+bindsym Mod4+p exec amixer -c 0 sset Master 2dB+
+
+# resize window (you can also use the mouse for that)
+
+bindsym Mod4+Control+h           resize shrink left 5 px or 5 ppt
+bindsym Mod4+Control+Shift+h     resize grow   left 5 px or 5 ppt
+
+bindsym Mod4+Control+j           resize shrink down 5 px or 5 ppt
+bindsym Mod4+Control+Shift+j     resize grow   down 5 px or 5 ppt
+
+bindsym Mod4+Control+k           resize shrink up 5 px or 5 ppt
+bindsym Mod4+Control+Shift+k     resize grow   up 5 px or 5 ppt
+
+bindsym Mod4+Control+l           resize shrink right 5 px or 5 ppt
+bindsym Mod4+Control+Shift+l     resize grow   right 5 px or 5 ppt
+
+# same bindings, but for the arrow keys
+bindsym Mod4+Control+Left        resize shrink left 5 px or 5 ppt
+bindsym Mod4+Control+Shift+Left  resize grow   left 5 px or 5 ppt
+
+bindsym Mod4+Control+Down        resize shrink down 5 px or 5 ppt
+bindsym Mod4+Control+Shift+Down  resize grow   down 5 px or 5 ppt
+
+bindsym Mod4+Control+Up          resize shrink up 5 px or 5 ppt
+bindsym Mod4+Control+Shift+Up    resize grow   up 5 px or 5 ppt
+
+bindsym Mod4+Control+Right       resize shrink right 5 px or 5 ppt
+bindsym Mod4+Control+Shift+Right resize grow   right 5 px or 5 ppt
+
+# Wallpaper
+exec display -size 1600x900 -window root ~/pic/wallpaper-416054.jpg.png
+exec_always ~/.dzen
+
+bar {
+  position top
+  output LVDS
+  tray_output none
+  colors {
+    focused_workspace    #ffdb00 #4f4f4f
+    inactive_workspace	 #9e9e9e #232323
+    urgent_workspace		 #9e9e9e #dd044b
+  }
+  font -*-profont-*-*-*-*-10-*-*-*-*-*-*-*
+}

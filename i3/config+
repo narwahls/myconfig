@@ -1,0 +1,3 @@
+bindsym $mod+p [instance="^scratchpad$"] scratchpad show
+exec_always flock -w1 ~/.config/i3/scratchpad/lockfile ~/.config/i3/scratchpad/perpetual_terminal.sh
+for_window [instance="^scratchpad$"] move scratchpad
