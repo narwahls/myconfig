@@ -1,5 +1,13 @@
 Configuration files for my desktops
+=======================
 
+features
+-------------------
+Solarized theme for many things.
+vim
+ncmpcpp configs
+i3
+awesome configs
 
 todo
 	solarized themes
