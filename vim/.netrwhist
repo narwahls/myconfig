@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/sven/myconfig'
-let g:netrw_dirhist_2='/home/sven/myconfig/awesome'
-let g:netrw_dirhist_3='/home/bse/.tmux'
-let g:netrw_dirhist_4='/home/bse'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/bse/.PlayOnLinux/configurations'
+let g:netrw_dirhist_2='/home/bse'
+let g:netrw_dirhist_3='/home/bse/.gnome'
+let g:netrw_dirhist_4='/home/bse/.gnome/apps'
+let g:netrw_dirhist_5='/home/bse/git/myconfig'

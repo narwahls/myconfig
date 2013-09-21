@@ -1,0 +1,20 @@
+Tips for VIM
+=============
+
+
+:o	open file
+:e	edit file
+/	searches text
+*	searches text under cursor
+#	searches text under cursor backwards
+
+:sp filename	split horizontally
+:vsp filename	split vertically
+<C-W>	Moves to the next split.
+k	Moves to the split above the current split.
+Up	Moves to the split above the current split.
+j	Moves to the split below the current split.
+Down	Moves to the split below the current split.
++	Increases the size of the current split by one line. (Try combining this with counts — e.g. 5<C-W>+ will make the split five lines bigger.)
+- 	(Minus sign) Decreases the size of the current split by one line.
+_	(Underscore) Maximize the current split (that is, make it take up as much room as possible.)
