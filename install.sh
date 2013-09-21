@@ -5,6 +5,7 @@
 
 # create the links for my environment
 CURRENTDIR=`pwd -P`
+rm $HOME/.Xsession; ln -s $CURRENTDIR/.Xsession $HOME/.Xsession
 rm $HOME/.Xresources; ln -s $CURRENTDIR/.Xresources $HOME/.Xresources
 rm $HOME/.tmux.conf; ln -s $CURRENTDIR/.tmux.conf $HOME/.tmux.conf
 rm $HOME/.vimrc; ln -s $CURRENTDIR/.vimrc $HOME/.vimrc
