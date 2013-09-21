@@ -78,9 +78,11 @@ themes = confdir .. "/themes"
 active_theme = themes .. "/multicolor"
 
 -- Themes define colours, icons, and wallpapers
-beautiful.init(active_theme .. "/theme.lua")
+-- beautiful.init(active_theme .. "/theme.lua")
 
-terminal = "xterm"
+beautiful.init( awful.util.getdir("config") .. "/themes/awesome-solarized/dark/theme.lua" )
+
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 gui_editor = "geany -ps"
