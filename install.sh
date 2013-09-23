@@ -1,8 +1,10 @@
 #!/bin/sh
 ## install packages
 #awesome awesome-extras rxvt-unicode luakit firefox mpd ncmpcpp git claws-mail 
-#claws-mail-il8n puppet? pioneers
+#claws-mail-il8n puppet? pioneers vlc atool
 
+# to test:
+#	http://code.google.com/p/vimwiki/
 # create the links for my environment
 CURRENTDIR=`pwd -P`
 rm $HOME/.Xsession; ln -s $CURRENTDIR/.Xsession $HOME/.Xsession
