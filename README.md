@@ -25,7 +25,7 @@ Solarized for my belongings.
 *	browser
   *		ff
   *		luakit
-	
-
+*	zsh
+	* >install.sh 
 
 
