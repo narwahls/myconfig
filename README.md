@@ -9,6 +9,14 @@ Solarized for my belongings.
 * awesome configs
 * zsh
 
+##installation
+* beware of damage to your active configs my install script !!! deletes !!!
+git clone https://github.com/bse666/myconfig.git $HOME/myconfig
+cd $home/myconfig
+git submodule init
+git submodile update
+./install.sh
+
 ##todo
 * solarized themes
 * //	vimrc
