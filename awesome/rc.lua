@@ -9,6 +9,10 @@ require("naughty")
 
 -- Vicious for widgets
 require("vicious")
+-- ror
+-- load the 'run or raise' function
+local ror = require("aweror")
+
 
 
 -- Load Debian menu entries
@@ -293,6 +297,10 @@ clientkeys = awful.util.table.join(
         end)
 )
 
+-- generate and add the 'run or raise' key bindings to the globalkeys table
+globalkeys = awful.util.table.join(globalkeys, ror.genkeys(modkey))
+
+root.keys(globalkeys)
 -- Compute the maximum number of digit we need, limited to 9
 keynumber = 0
 for s = 1, screen.count() do
