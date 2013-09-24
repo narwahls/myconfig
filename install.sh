@@ -16,6 +16,9 @@ rm -rf $HOME/.ncmpcpp; ln -s $CURRENTDIR/ncmpcpp $HOME/.ncmpcpp
 rm -rf $HOME/.i3; ln -s $CURRENTDIR/i3 $HOME/.i3
 
 rm -rf $HOME/.vim; ln -s $CURRENTDIR/vim $HOME/.vim
+
+rm $HOME/.xmonad; ln -s $CURRENTDIR/xmonad $HOME/.xmonad
+
 # old/standard zsh config
 #rm -rf $HOME/.zshrc; ln -s $CURRENTDIR/.zshrc $HOME/.zshrc
 
