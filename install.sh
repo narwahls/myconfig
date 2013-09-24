@@ -18,3 +18,4 @@ rm -rf $HOME/.i3; ln -s $CURRENTDIR/i3 $HOME/.i3
 rm -rf $HOME/.vim; ln -s $CURRENTDIR/vim $HOME/.vim
 rm -rf $HOME/.zshrc; ln -s $CURRENTDIR/.zshrc $HOME/.zshrc
 
+sudo sed -i_bak 's#NoDisplay=true#NoDisplay=false#g' awesome.desktop
