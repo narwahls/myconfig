@@ -1,7 +1,8 @@
 #!/bin/sh
 ## install packages
-#awesome awesome-extras rxvt-unicode luakit firefox mpd ncmpcpp git claws-mail 
-#claws-mail-il8n puppet? pioneers vlc atool
+#apt-get install awesome awesome-extras rxvt-unicode luakit firefox mpd ncmpcpp\
+#git claws-mail claws-mail-il8n puppet? pioneers vlc atool ranger tmux\
+#vim-puppet zsh
 
 git submodule init
 git submodule update
@@ -31,3 +32,9 @@ sed -i "s#ZSH=\$HOME/.oh-my-zsh#ZSH=$CURRENTDIR/oh-my-zsh#g" $HOME/.zshrc
 # set default shell
 chsh -s /bin/zsh
 
+# ncmpcpp
+rm -rf $HOME/.ncmpcpp;ln -s $CURRENTDIR/ncmpcpp $HOME/.ncmpcpp
+# mpd
+rm $HOME/.mpdconf;ln -s $CURRENTDIR/ncmpcpp/mpdconf $HOME/.mpdconf
+mkdir -p ~/.mpd/playlists
+touch ~/.mpd/tag_cache
