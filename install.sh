@@ -3,6 +3,8 @@
 #awesome awesome-extras rxvt-unicode luakit firefox mpd ncmpcpp git claws-mail 
 #claws-mail-il8n puppet? pioneers vlc atool
 
+git submodule init
+git submodule update
 # to test:
 #	http://code.google.com/p/vimwiki/
 # create the links for my environment
