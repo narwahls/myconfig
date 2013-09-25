@@ -24,7 +24,7 @@ rm $HOME/.xmonad; ln -s $CURRENTDIR/xmonad $HOME/.xmonad
 
 sudo sed -i_bak 's#NoDisplay=true#NoDisplay=false#g' awesome.desktop
 
-rm -rf $HOME/.zshrc; cp $CURRENTDIR/.eh-my-zsh/templastes/zshrc.zsh-template $HOME/.zshrc
+rm -rf $HOME/.zshrc; cp $CURRENTDIR/oh-my-zsh/templastes/zshrc.zsh-template $HOME/.zshrc
 sed -i "s#ZSH=\$HOME/.oh-my-zsh#ZSH=$CURRENTDIR/oh-my-zsh#g" $HOME/.zshrc
 # set default shell
 chsh -s /bin/zsh
