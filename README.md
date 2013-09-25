@@ -3,11 +3,12 @@
 Solarized for my belongings.
 
 ##features
-* vim
-* ncmpcpp configs
-* i3
-* awesome configs
-* zsh
+* [awesome](http://awesome.naquadah.org)
+* [i3](http://i3wm.org)
+* [ncmpcpp](http://ncmpcpp.rybczak.net/)
+* [vim](http://www.vim.org)
+* [zsh](http://zsh.sourceforge.net/)
+  * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ##installation
 * beware of damage to your active configs my install script !!! deletes !!!

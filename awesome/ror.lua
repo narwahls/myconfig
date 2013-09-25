@@ -12,9 +12,10 @@ table5={
 --   ["e"]={"emacsclient -a emacs -n -c","Emacs"}, 
 --   ["w"]={"firefox","Firefox"}, 
 --   ["v"]={"firefox -new-window 'http://www.evernote.com/Home.action?login=true#v=l&so=mn'","Evernote", "name"}, 
-   ["g"]={"firefox -new-window 'http://mail.google.com/mail/'","Gmail","name"}, 
+--   ["g"]={"firefox -new-window 'http://mail.google.com/mail/'","Gmail","name"}, 
 --   ["x"]={"urxvt","xterm", "instance"}, 
-   ["f"]={"urxvt -name mcTerm -e mc -d","mcTerm", "instance"}, 
+-- conflicts with fullscreen
+--   ["f"]={"urxvt -name mcTerm -e mc -d","mcTerm", "instance"}, 
 --   ["s"]={"xterm -name rootTerm -cr red -title rootTerm -e su","rootTerm", "instance"}, 
 --  ["t"]={"xterm -name htopTerm -e htop","htopTerm","instance"}, 
 --   ["b"]={"xterm -name rtorrentTerm -e rtorrent","rtorrentTerm","instance"}, 
