@@ -3,7 +3,16 @@
 #
 
 # connection settings
-mpd_music_dir = "/home/w0ng/music"
+mpd_host = localhost
+mpd_port = 60600
+mpd_music_dir = "~/Musik"
+
+# visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "1"
+#visualizer_type = "wave" (spectrum/wave)
+visualizer_type = "spectrum" (spectrum/wave)
 
 # song format
 song_list_format = "{$3%n │ $9}{$7%a - $9}{$5%t$9}|{$8%f$9}$R{$6 │ %b$9}{$3 │ %l$9}"

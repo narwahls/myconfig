@@ -32,9 +32,15 @@ sed -i "s#ZSH=\$HOME/.oh-my-zsh#ZSH=$CURRENTDIR/oh-my-zsh#g" $HOME/.zshrc
 # set default shell
 chsh -s /bin/zsh
 
+# luakit
+rm -rf $HOME/.config/luakit;ln -s $CURRENTDIR/luakit $HOME/.config/luakit
+
 # ncmpcpp
 rm -rf $HOME/.ncmpcpp;ln -s $CURRENTDIR/ncmpcpp $HOME/.ncmpcpp
 # mpd
 rm $HOME/.mpdconf;ln -s $CURRENTDIR/ncmpcpp/mpdconf $HOME/.mpdconf
 mkdir -p ~/.mpd/playlists
 touch ~/.mpd/tag_cache
+
+sudo sed -i "s#START_MPD=true#START_MPD=false#g" /etc/default/mpd
+if [ "$(pidof mpd)" ]; then sudo kill `pidof mpd`; fi
