@@ -1,6 +1,6 @@
 *.swp
 vim/.netrwhist
-#solarized
+solarized/
 xmonad/xmonad.errors
 xmonad/xmonad.o
 xmonad/xmonad.hi
