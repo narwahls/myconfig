@@ -6,7 +6,8 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
-
+-- Volume bar
+--require("volume")
 -- Vicious for widgets
 require("vicious")
 -- ror

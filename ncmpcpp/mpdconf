@@ -25,7 +25,7 @@ playlist_directory		"~/.mpd/playlists"
 # MPD to accept files over ipc socket (using file:// protocol) or streaming
 # files over an accepted protocol.
 #
-db_file			"~/.mpd/tag_cache"
+db_file				"~/.mpd/tag_cache"
 # 
 # These settings are the locations for the daemon log files for the daemon.
 # These logs are great for troubleshooting, depending on your log_level
@@ -64,7 +64,7 @@ sticker_file                   "~/.mpd/sticker.sql"
 # initialization. This setting is disabled by default and MPD is run as the
 # current user.
 #
-#user				"mpd"
+# user				"bse"
 #
 # This setting specifies the group that MPD will run as. If not specified
 # primary group of user specified with "user" setting will be used (if set).
@@ -332,7 +332,7 @@ audio_output {
 # all controls, even if the mixer is not supported by the device and will not
 # affect any other sound producing applications.
 #
-#mixer_type			"software"
+mixer_type			"software"
 #
 # This example will not allow MPD to touch the mixer at all and will disable
 # all volume controls.
