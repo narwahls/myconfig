@@ -403,18 +403,18 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- put this in your "manage" signal handler
-c:add_signal("property::urgent", function(c)
-    if c.urgent then
+-- c:add_signal("property::urgent", function(c)
+--     if c.urgent then
         -- Change the border color of the urgent window.
         -- You'll need to define the color in your theme.lua, e.g.
         -- theme.border_urgent = "#FF3737CC"
         -- or you set the color directly to c.border_color 
-        c.border_color = beautiful.border_urgent
+--        c.border_color = beautiful.border_urgent
  
         -- Show a popup notification with the window title
-        naughty.notify({text="Urgent: " .. c.name})
-    end
-end)
+--        naughty.notify({text="Urgent: " .. c.name})
+--    end
+--end)
 -- }}}
 --
 -- {{{ autostart function and such
