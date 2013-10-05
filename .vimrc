@@ -107,17 +107,23 @@ nmap Q gqap
 
 "============ Custom Mappings ==============
 " tabbing
-	nmap <C-Tab> :tabnext<CR>
-	nmap <C-S-Tab> :tabprevious<CR>
-	map <C-S-Tab> :tabprevious<CR>
-	map <C-Tab> :tabnext<CR>
-	imap <C-Tab> <ESC>:tabnext<CR>
-	imap <C-S-Tab> <ESC>:tabprevious<CR>
-	noremap <F7> :set expandtab!<CR>
+nmap <C-Tab> :tabnext<CR>
+nmap <C-S-Tab> :tabprevious<CR>
+map <C-S-Tab> :tabprevious<CR>
+map <C-Tab> :tabnext<CR>
+imap <C-Tab> <ESC>:tabnext<CR>
+imap <C-S-Tab> <ESC>:tabprevious<CR>
+noremap <F7> :set expandtab!<CR>
 
 " with line wrapping go 1 line in editor not 1 line in text.
 " nnoremap j gj
 " nnoremap k gk
+
+" " Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
 
 " Easy window navigation
 map <C-h> <C-w>h
@@ -130,5 +136,3 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " write the file with sudo: w!!
 cmap w!! w !sudo tee % >/dev/null
-
-
