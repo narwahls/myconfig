@@ -16,8 +16,10 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 set hidden
 
+" vimboy plugin
 au bufread,bufnewfile ~/wiki/* set ft=vimboy
-
+" notes plugin
+let g:notes_directories = ['~/Dokumente/Notes', '~/Dropbox/Shared Notes']
 set t_Co=16
 
 syntax on
