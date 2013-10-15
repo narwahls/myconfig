@@ -16,6 +16,8 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 set hidden
 
+au bufread,bufnewfile ~/wiki/* set ft=vimboy
+
 set t_Co=16
 
 syntax on
