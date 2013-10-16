@@ -46,6 +46,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+# alias for setting solarized dark/light
+alias 'sold=xrdb -DSOLARIZED_DARK -merge $HOME/.Xresources'
+alias 'soll=xrdb -DSOLARIZED_LIGHT -merge $HOME/.Xresources'
 alias 'today=calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias 'dus=du -sckx * | sort -nr'
 alias 'adventure=emacs -batch -l dunnet'
