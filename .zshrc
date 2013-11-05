@@ -6,7 +6,8 @@ ZSH=$HOME/git/github/myconfig/oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="random"
+ZSH_THEME="wezm+"
+#ZSH_THEME="random"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
