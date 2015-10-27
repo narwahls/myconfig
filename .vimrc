@@ -27,6 +27,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts = 1
 syntax on
 
+
 set background=dark " dark | light "
 colorscheme solarized
 call togglebg#map("<F5>")
