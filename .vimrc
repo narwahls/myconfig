@@ -7,8 +7,10 @@
 set nocompatible
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
+filetype off
 call pathogen#helptags()
 call pathogen#incubate() "pathogen#runtime_append_all_bundles()
+filetype on
 " change the mapleader from \ to ,
 let mapleader=","
 " Quickly edit/reload the vimrc file
@@ -21,7 +23,8 @@ au bufread,bufnewfile ~/wiki/* set ft=vimboy
 " notes plugin
 let g:notes_directories = ['~/Dokumente/Notes', '~/Dropbox/Shared Notes']
 set t_Co=16
-
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts = 1
 syntax on
 
 set background=dark " dark | light "
@@ -54,6 +57,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
+set laststatus=2
 
 set nobackup
 set noswapfile
