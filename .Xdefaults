@@ -1,0 +1,107 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+ 
+Xft.dpi: 96
+Xft.antialias: false
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+ 
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+ 
+URxvt.depth: 32
+URxvt.geometry: 90x30
+URxvt.transparent: false
+URxvt.fading: 0
+URxvt.urgentOnBell: true
+! URxvt.visualBell: true
+URxvt.loginShell: true
+URxvt.saveLines: 5000
+URxvt.internalBorder: 3
+URxvt.lineSpace: 0
+URxvt.letterspace: -2
+! fix strg-shift update
+URxvt.iso14755: false
+
+! Fonts
+URxvt.allow_bold: false
+!URxvt.font: -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1
+!URxvt.font: -*-fixed-medium-r-normal-*-*-120-*-*-*-*-*-*
+!URxvt.font: xft:Source Code Pro for Powerline:style=Regular:pixelsize=11
+URxvt.font: xft:Terminus:style=medium:pixelsize=11,xft:Literation Mono Powerline:style=Regular:pixelsize=12
+! URxvt*boldFont: xft:Monospace:pixelsize=12
+! URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=11
+URxvt*inheritPixmap: false
+
+! Fix font space
+URxvt*letterSpace: 0
+ 
+! Scrollbar
+URxvt.scrollStyle: rxvt
+URxvt.scrollBar: false
+ 
+! Perl extensions
+URxvt.perl-ext-common: default,matcher 
+!,font-size
+URxvt.matcher.button: 1
+! URxvt.urlLauncher: chromium-browser
+URxvt.urlLauncher: firefox
+ 
+! Cursor
+URxvt.cursorBlink: true
+URxvt.cursorColor: #657b83
+URxvt.cursorUnderline: false
+ 
+! Pointer
+URxvt.pointerBlank: true
+
+! Keys for font+++
+! URxvt.keysym.C-Up:     perl:font-size:increase
+! URxvt.keysym.C-Down:   perl:font-size:decrease
+! URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+! URxvt.keysym.C-S-Down: perl:font-size:decglobal
+
+!! ColorConfig as of here !!
+
+! special
+*.foreground:   #eceff1
+*.background:   #263238
+*.cursorColor:  #eceff1
+
+! black
+*.color0:       #263238
+*.color8:       #37474f
+
+! red
+*.color1:       #ff9800
+*.color9:       #ffa74d
+
+! green
+*.color2:       #8bc34a
+*.color10:      #9ccc65
+
+! yellow
+*.color3:       #ffc107
+*.color11:      #ffa000
+
+! blue
+*.color4:       #03a9f4
+*.color12:      #81d4fa
+
+! magenta
+*.color5:       #e91e63
+*.color13:      #ad1457
+
+! cyan
+*.color6:       #009688
+*.color14:      #26a69a
+
+! white
+*.color7:       #cfd8dc
+*.color15:      #eceff1
