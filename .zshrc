@@ -57,6 +57,7 @@ alias 'mailsize=du -hs ~/Library/mail'
 alias 'bk=cd $OLDPWD'
 alias 'ttop=top -ocpu -R -F -s 2 -n30'
 alias lh='ls -a | egrep "^\."'
+alias gd='cd ~/git'
 
 # sort files in current directory by the number of words they contain
 alias 'wordy=wc -w * | sort | tail -n10'
